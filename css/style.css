@@ -1002,6 +1002,13 @@ button {
   .footer-input {
     width: 264px;
   }
+  .footer-social {
+    align-items: flex-start;
+      justify-content: flex-start;
+  }
+  .footer-title {
+    margin-bottom: 0;
+  }
 
   .footer-subscribe {
     align-items: flex-start;
