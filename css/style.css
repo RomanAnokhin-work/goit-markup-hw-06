@@ -98,7 +98,7 @@ button {
 
 .header-logo {
   display: block;
-  padding: 16px;
+  padding: 16px 0;
 }
 .accent {
   color: #4d5ae5;
@@ -156,6 +156,7 @@ button {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 .mobile-menu-nav-link.current,
 .mobile-menu-contact-link.current {
@@ -179,6 +180,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  text-decoration: none;
+  font-style: normal;
 }
 .mobile-menu-socials-list {
   display: flex;
@@ -243,6 +246,8 @@ button {
   min-height: 623px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 72px;
+  padding-bottom: 24px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -288,11 +293,10 @@ button {
   color: #2e2f42;
   width: 256px;
   margin-bottom: 16px;
-  margin-top: 72px;
 }
 .modal-item {
   width: 100%;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
@@ -300,6 +304,7 @@ button {
 .modal-input {
   width: 256px;
   height: 40px;
+  padding: 11px 38px;
 }
 .modal-item:focus {
   border-color: #4d5ae5;
@@ -318,8 +323,11 @@ button {
   display: inline-block;
   margin-bottom: 4px;
 }
-.modal-field {
-  margin-bottom: 8px;
+.modal-field-cover {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
 }
 .modal-input-icon {
   position: absolute;
@@ -331,16 +339,20 @@ button {
   position: relative;
 }
 .modal-textarea {
+  width: 360px;
   height: 138px;
   resize: none;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
+  padding: 8px 16px;
 }
 .check-text {
   display: flex;
   align-items: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
   gap: 8px;
   font-weight: 400;
   font-size: 12px;
@@ -395,27 +407,22 @@ button {
   background: #4d5ae5;
 }
 /* hero */
-.hero {
+.hero-section {
   text-align: center;
+  padding: 72px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      image-set(url("../images/hero/hero-mob-min.jpg") 1x,
+        url("../images/hero/hero-mob@2x-min.jpg") 2x);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2e2f42;
 }
 .hero-container {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    image-set(
-      url("../images/hero/hero-mob-min.jpg") 1x,
-      url("../images/hero/hero-mob@2x-min.jpg") 2x
-    );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #2e2f42;
-  text-align: center;
+  
   width: 100%;
   max-width: 320px;
-  max-height: 432px;
-  padding: 72px 0;
   margin: 0 auto;
 }
 .hero-title {
@@ -471,10 +478,13 @@ button {
   border-radius: 4px;
 }
 /* Advantages */
+.advantages-section {
+  padding: 96px 16px;
+}
 .advantages-container {
   width: 100%;
   max-width: 320px;
-  padding: 96px 16px;
+  
   margin: 0 auto;
 }
 .advantage-icon-bg {
@@ -492,8 +502,10 @@ button {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   color: #2e2f42;
-  margin-top: 8px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 .advantage-description {
@@ -506,18 +518,20 @@ button {
   color: #434455;
 }
 /* Our Team */
+.team-section {
+  padding: 96px 28px;
+  background-color: #f4f4fd;
+}
 .team-container {
   width: 100%;
   max-width: 320px;
-  padding: 96px 28px;
   margin: 0 auto;
-  background-color: #f4f4fd;
+  background-color: transparent;
 }
 .team-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
@@ -525,12 +539,14 @@ button {
   text-align: center;
   color: #2e2f42;
 }
+
 .team-item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 72px;
 }
 .team-item-description {
   display: flex;
@@ -539,6 +555,7 @@ button {
   flex-direction: column;
   gap: 8px;
   padding: 32px 16px;
+  background-color: #FFFFFF;
 }
 .team-name {
   font-weight: 500;
@@ -583,11 +600,14 @@ button {
   background-color: #404bbf;
 }
 /* Portfolio */
+.portfolio-section {
+  padding: 96px 16px;
+}
 .portfolio-container {
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
-  padding: 96px 16px;
+  
 }
 .portfolio-title {
   display: flex;
@@ -634,6 +654,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-decoration: none;
 }
 .portfolio-img-wrapper {
   position: relative;
@@ -648,11 +669,12 @@ button {
 /* footer */
 .footer {
   background-color: #2e2f42;
+  padding: 96px 16px;
 }
 .footer-container {
   max-width: 320px;
   width: 100%;
-  padding: 96px 16px;
+  
   gap: 72px;
   margin: 0 auto;
   display: flex;
@@ -701,6 +723,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px
 }
 .footer-social {
   display: flex;
@@ -729,7 +752,7 @@ button {
   fill: #f4f4fd;
 }
 
-.social-link:hover,
+.social-link:ho ver,
 .social-link:focus {
   background-color: #31d0aa;
 }
@@ -748,6 +771,7 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   opacity: 0.3;
   color: #ffffff;
+  padding: 8px 16px;
 }
 .footer-input::placeholder {
   font-weight: 400;
@@ -756,6 +780,7 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   opacity: 0.6;
+  
 }
 .footer-form {
   display: flex;
@@ -827,6 +852,7 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -864,6 +890,7 @@ button {
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #434455;
+    text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -883,21 +910,20 @@ button {
     margin-left: 96px;
     margin-right: 95px;
   }
+  .hero-section {
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        image-set(url("../images/hero/hero-tab-min.jpg") 1x,
+          url("../images/hero/hero-tab@2x-min.jpg") 2x);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
   .hero-container {
     max-width: 768px;
-    max-height: 436px;
-    padding: 112px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      image-set(
-        url("../images/hero/hero-tab-min.jpg") 1x,
-        url("../images/hero/hero-tab@2x-min.jpg") 2x
-      );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    
+    
   }
   .hero-title {
     width: 496px;
@@ -920,10 +946,15 @@ button {
   }
   .advantage-title {
     text-align: left;
+    justify-content: flex-start;
+  }
+  .team-section {
+    padding: 96px 108px;
+    background-color: #f4f4fd;
   }
   .team-container {
     max-width: 768px;
-    padding: 96px 108px;
+    background-color: transparent;
   }
   .team-list {
     display: flex;
@@ -931,7 +962,11 @@ button {
     column-gap: 24px;
     row-gap: 64px;
   }
+  .team-title {
+    margin-bottom: 72px;
+  }
   .team-item {
+    margin: 0;
     flex-basis: calc((100% - 24px) / 2);
   }
   .portfolio-container {
@@ -944,10 +979,16 @@ button {
   .work-examples-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .footer {
+    padding: 96px 0px;
+  }
   .footer-container {
+    align-items: flex-start;
+    justify-content: flex-start;
     max-width: 768px;
-    padding: 96px 16px;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding: 0 108px;
   }
   .footer-logo {
     align-items: flex-start;
@@ -956,6 +997,9 @@ button {
   .footer-description {
     align-items: flex-start;
     justify-content: flex-start;
+    width: 264px;
+  }
+  .footer-input {
     width: 264px;
   }
 
@@ -989,27 +1033,29 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
+  .hero-section{
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)),
+        image-set(url("../images/hero/hero-desk-min.jpg") 1x,
+          url("../images/hero/hero-desk@2x-min.jpg") 2x);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
   .hero-container {
     max-width: 1440px;
-    max-height: 600px;
-    padding: 188px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      image-set(
-        url("../images/hero/hero-desk-min.jpg") 1x,
-        url("../images/hero/hero-desk@2x-min.jpg") 2x
-      );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    
+    
   }
   .hero-title {
     margin-bottom: 48px;
   }
+  .advantages-section {
+    padding: 120px 15px;
+  }
   .advantages-container {
-    padding: 120px 0;
+    
     max-width: 1158px;
   }
   .advantages-list {
@@ -1030,6 +1076,7 @@ button {
   }
   .advantage-title {
     align-items: flex-start;
+    justify-content: flex-start;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -1038,9 +1085,14 @@ button {
     align-items: flex-start;
     font-weight: 400;
   }
+  .team-section {
+    padding: 0;
+    background-color: #f4f4fd;
+  }
   .team-container {
     max-width: 1158px;
-    padding: 0;
+    background-color: transparent;
+    
   }
   .team-list {
     row-gap: 0px;
@@ -1049,9 +1101,12 @@ button {
   .team-item {
     flex-basis: calc((100% - 72px) / 4);
   }
+  .portfolio-section {
+    padding: 120px 15px;
+  }
   .portfolio-container {
     max-width: 1158px;
-    padding: 120px 156px;
+    
   }
   .work-examples-item {
     flex-basis: calc((100% - 48px) / 3);
@@ -1097,27 +1152,22 @@ button {
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .footer {
+  }
   .footer-container {
+    padding: 0 15px;
     max-width: 1158px;
     gap: 0;
-    padding: 0;
     flex-wrap: nowrap;
+    align-items: baseline;
   }
   .footer-cover {
-    padding: 100px 0;
-    padding-left: 156px;
     margin-right: 120px;
   }
   .footer-social {
-    padding-top: 100px;
-    padding-bottom: 132px;
     margin-right: 80px;
   }
   .footer-subscribe {
-    width: 453px;
-    padding-top: 100px;
-    padding-bottom: 132px;
-    padding-right: 159px;
   }
   .footer-input {
     width: 264px;
