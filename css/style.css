@@ -339,7 +339,7 @@ button {
   position: relative;
 }
 .modal-textarea {
-  width: 360px;
+  width: 256px;
   height: 138px;
   resize: none;
   font-weight: 400;
@@ -909,6 +909,9 @@ button {
     width: 360px;
   }
   .modal-input {
+    width: 360px;
+  }
+  .modal-textarea {
     width: 360px;
   }
   .send-btn {
