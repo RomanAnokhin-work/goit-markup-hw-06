@@ -548,6 +548,11 @@ button {
   width: 100%;
   margin-top: 72px;
 }
+.team-item:focus,
+.team-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #FFFFFF;
+}
 .team-item-description {
   display: flex;
   align-items: center;
@@ -1093,7 +1098,7 @@ button {
     font-weight: 400;
   }
   .team-section {
-    padding: 0;
+    padding: 120px 0;
     background-color: #f4f4fd;
   }
   .team-container {
@@ -1106,6 +1111,7 @@ button {
     flex-wrap: nowrap;
   }
   .team-item {
+   
     flex-basis: calc((100% - 72px) / 4);
   }
   .portfolio-section {
