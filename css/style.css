@@ -327,7 +327,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-
 }
 .modal-input-icon {
   position: absolute;
@@ -410,17 +409,20 @@ button {
 .hero-section {
   text-align: center;
   padding: 72px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      image-set(url("../images/hero/hero-mob-min.jpg") 1x,
-        url("../images/hero/hero-mob@2x-min.jpg") 2x);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    image-set(
+      url("../images/hero/hero-mob-min.jpg") 1x,
+      url("../images/hero/hero-mob@2x-min.jpg") 2x
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2e2f42;
 }
 .hero-container {
-  
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
@@ -484,7 +486,7 @@ button {
 .advantages-container {
   width: 100%;
   max-width: 320px;
-  
+
   margin: 0 auto;
 }
 .advantage-icon-bg {
@@ -550,8 +552,9 @@ button {
 }
 .team-item:focus,
 .team-item:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #FFFFFF;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #ffffff;
 }
 .team-item-description {
   display: flex;
@@ -560,7 +563,7 @@ button {
   flex-direction: column;
   gap: 8px;
   padding: 32px 16px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .team-name {
   font-weight: 500;
@@ -612,7 +615,6 @@ button {
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
-  
 }
 .portfolio-title {
   display: flex;
@@ -645,9 +647,9 @@ button {
   flex-direction: column;
   gap: 8px;
   padding: 32px 16px;
-  border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 .project-name {
   font-weight: 500;
@@ -682,7 +684,7 @@ button {
 .footer-container {
   max-width: 320px;
   width: 100%;
-  
+
   gap: 72px;
   margin: 0 auto;
   display: flex;
@@ -731,7 +733,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 .footer-social {
   display: flex;
@@ -788,7 +790,6 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   opacity: 0.6;
-  
 }
 .footer-form {
   display: flex;
@@ -923,18 +924,20 @@ button {
   }
   .hero-section {
     padding: 112px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        image-set(url("../images/hero/hero-tab-min.jpg") 1x,
-          url("../images/hero/hero-tab@2x-min.jpg") 2x);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      image-set(
+        url("../images/hero/hero-tab-min.jpg") 1x,
+        url("../images/hero/hero-tab@2x-min.jpg") 2x
+      );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .hero-container {
     max-width: 768px;
-    
-    
   }
   .hero-title {
     width: 496px;
@@ -965,6 +968,7 @@ button {
   }
   .team-container {
     max-width: 768px;
+    padding: 0;
     background-color: transparent;
   }
   .team-list {
@@ -1015,7 +1019,7 @@ button {
   }
   .footer-social {
     align-items: flex-start;
-      justify-content: flex-start;
+    justify-content: flex-start;
   }
   .footer-title {
     margin-bottom: 0;
@@ -1051,20 +1055,22 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-  .hero-section{
+  .hero-section {
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)),
-        image-set(url("../images/hero/hero-desk-min.jpg") 1x,
-          url("../images/hero/hero-desk@2x-min.jpg") 2x);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      image-set(
+        url("../images/hero/hero-desk-min.jpg") 1x,
+        url("../images/hero/hero-desk@2x-min.jpg") 2x
+      );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .hero-container {
     max-width: 1440px;
-    
-    
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1073,7 +1079,6 @@ button {
     padding: 120px 15px;
   }
   .advantages-container {
-    
     max-width: 1158px;
   }
   .advantages-list {
@@ -1110,14 +1115,12 @@ button {
   .team-container {
     max-width: 1158px;
     background-color: transparent;
-    
   }
   .team-list {
     row-gap: 0px;
     flex-wrap: nowrap;
   }
   .team-item {
-   
     flex-basis: calc((100% - 72px) / 4);
   }
   .portfolio-section {
@@ -1125,7 +1128,6 @@ button {
   }
   .portfolio-container {
     max-width: 1158px;
-    
   }
   .work-examples-item {
     flex-basis: calc((100% - 48px) / 3);
@@ -1168,8 +1170,6 @@ button {
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer {
-  }
   .footer-container {
     padding: 0 15px;
     max-width: 1158px;
@@ -1183,8 +1183,7 @@ button {
   .footer-social {
     margin-right: 80px;
   }
-  .footer-subscribe {
-  }
+
   .footer-input {
     width: 264px;
     border: 1px solid #ffffff;
